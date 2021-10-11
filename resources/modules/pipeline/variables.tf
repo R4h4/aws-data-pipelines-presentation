@@ -8,8 +8,8 @@ variable "app_environment" {
   type        = string
 }
 
-variable "aws_region" {
-  description = "The region of the deployment in AWS"
+variable "event_type_name" {
+  description = "The name of the event we want to observe"
   type        = string
 }
 
@@ -23,8 +23,12 @@ variable "data_lake_bucket_arn" {
   type        = string
 }
 
+variable "database_name" {
+  description = "Data lake transformed datbase"
+  type        = string
+}
 
-variable "event_type_name" {
-  description = "The name of the event we want to observe"
+variable "table_name" {
+  description = "Transoformed send events"
   type        = string
 }

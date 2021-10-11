@@ -27,7 +27,7 @@ if __name__ == '__main__':
                 }),
                 'PartitionKey': str(uuid.uuid4())
             } for _ in range(random.randint(50, 500))],
-            StreamName='moon-pipelines-dev-transformed'
+            StreamName='moon-pipelines-dev-sent-transformed'
         )
         sleep(2)
 

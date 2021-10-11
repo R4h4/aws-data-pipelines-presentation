@@ -9,7 +9,7 @@ terraform {
   backend "s3" {
     profile = "AudienceServAWS"
     bucket  = "as-terraform-backends"
-    key     = "state/moon/pipelines/dev.tfstate"
+    key     = "state/moon/pipelines_presentation/dev.tfstate"
     region  = "eu-west-1"
   }
 }
